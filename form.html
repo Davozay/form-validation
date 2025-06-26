@@ -55,50 +55,48 @@
       }
 
       @media screen and(min-width: 600px) {
-         [class*="logo"] {
-        height: 120px;
-        display: inline-block;
-        position: absolute;
-        top: 5px;
-        border-radius: 200px;
+        [class*="logo"] {
+          height: 120px;
+          display: inline-block;
+          position: absolute;
+          top: 5px;
+          border-radius: 200px;
 
-        /* transform: rotate(45deg); */
-      }
-      body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center; /* centers horizontally */
-        align-items: center; /* centers vertically */
-        background-color: #f2f2f2;
-      }
-      .forma {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        flex-direction: column;
-        width: 300px;
-        display: flex;
-        padding: 30px;
-      }
-      input {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        padding: 12px 20px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        display: inline-block;
-        box-sizing: border-box;
-        margin: 8px 0;
-      }
-      input[type="submit"] {
-        width: 100%;
-        background-color: green;
-        color: white;
-        padding: 14px 20px;
-        border: none;
-        border-radius: 9px;
-      }
-
-        
+          /* transform: rotate(45deg); */
+        }
+        body {
+          margin: 0;
+          height: 100vh;
+          display: flex;
+          justify-content: center; /* centers horizontally */
+          align-items: center; /* centers vertically */
+          background-color: #f2f2f2;
+        }
+        .forma {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          flex-direction: column;
+          width: 300px;
+          display: flex;
+          padding: 30px;
+        }
+        input {
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          width: 100%;
+          padding: 12px 20px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          display: inline-block;
+          box-sizing: border-box;
+          margin: 8px 0;
+        }
+        input[type="submit"] {
+          width: 100%;
+          background-color: green;
+          color: white;
+          padding: 14px 20px;
+          border: none;
+          border-radius: 9px;
+        }
       }
 
       @media screen and (max-width: 768px) {
@@ -114,7 +112,6 @@
         }
 
         input {
-      
           margin: 20px 0;
         }
       }
@@ -135,7 +132,10 @@
         placeholder="Confirm password"
       />
       <span id="c_password_error"></span>
-      <input value="Click Me" type="submit" name="" id="btn" />
+
+      <motion.div>
+        <input value="Click Me" type="submit" name="" id="btn" />
+      </div>
     </form>
 
     <script src="script.js"></script>

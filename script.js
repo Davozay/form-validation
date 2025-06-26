@@ -1,3 +1,5 @@
+const { AOS } = require("aos");
+
 const names = document.getElementById("name");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
@@ -54,3 +56,4 @@ form.addEventListener("submit", (e) => {
     conpass_error.style.color = "red";
   }
 });
+AOS.init()
