@@ -56,4 +56,3 @@ form.addEventListener("submit", (e) => {
     conpass_error.style.color = "red";
   }
 });
-AOS.init()
