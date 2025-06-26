@@ -1,4 +1,4 @@
-const { AOS } = require("aos");
+
 
 const names = document.getElementById("name");
 const email = document.getElementById("email");
