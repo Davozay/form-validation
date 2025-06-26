@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔴Validation Form🟢</title>
+    <style>
+      /* input[class=forma]{
+            display: block;
+
+            
+        } */
+
+      [class*="logo"] {
+        height: 120px;
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        border-radius: 200px;
+
+        /* transform: rotate(45deg); */
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center; /* centers horizontally */
+        align-items: center; /* centers vertically */
+        background-color: #f2f2f2;
+      }
+      .forma {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        width: 300px;
+        display: flex;
+        padding: 30px;
+      }
+      input {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 8px 0;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: green;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 9px;
+      }
+
+      @media screen and(min-width: 600px) {
+         [class*="logo"] {
+        height: 120px;
+        display: inline-block;
+        position: absolute;
+        top: 5px;
+        border-radius: 200px;
+
+        /* transform: rotate(45deg); */
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center; /* centers horizontally */
+        align-items: center; /* centers vertically */
+        background-color: #f2f2f2;
+      }
+      .forma {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        width: 300px;
+        display: flex;
+        padding: 30px;
+      }
+      input {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 8px 0;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: green;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 9px;
+      }
+
+        
+      }
+
+      @media screen and (max-width: 768px) {
+        [class*="logo"] {
+          position: absolute;
+          top: 7px;
+          height: 100px;
+          left: 200px;
+        }
+        .forma {
+          height: 70%;
+          margin-top: 25%;
+        }
+
+        input {
+      
+          margin: 20px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="assets/amlogo.jpg" alt="logo-upsidedown-As" class="logo" />
+    <form id="form" class="forma" action="">
+      <input id="name" type="text" placeholder="Name" />
+      <span id="name_error"></span>
+      <input id="email" type="email" placeholder="Email" />
+      <span id="email_error"></span>
+      <input id="password" type="password" placeholder="password" />
+      <span id="password_error"></span>
+      <input
+        id="confirm-password"
+        type="password"
+        placeholder="Confirm password"
+      />
+      <span id="c_password_error"></span>
+      <input value="Click Me" type="submit" name="" id="btn" />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
